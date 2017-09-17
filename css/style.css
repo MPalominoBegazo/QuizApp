@@ -1,6 +1,93 @@
-.wizard {
+body{
+    background: url("../img/machupichu.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+   
+}
+
+.col-md-12 img{
+    height: 200px;
+    margin: 0 auto;
+    padding: 0;
+}
+.col-xs-12 .btnImg{
+    margin-top: 35px;
+}
+
+.col-md-12 .btnImg{
+    height: 150px;
+    padding: 0;
+}
+
+.col-md-6 #inca{
+    width: 300px;
+}
+
+.col-xs-6 #inca{
+    margin-top: 35px;
+}
+
+
+.zoomIt{
+    display:block!important;
+    -webkit-transition:-webkit-transform 1s ease-out;
+    -moz-transition:-moz-transform 1s ease-out;
+    -o-transition:-o-transform 1s ease-out;
+    -ms-transition:-ms-transform 1s ease-out;
+    transition:transform 1s ease-out;
+}
+.zoomIt:hover{
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1)
+}
+
+/*CATEGORIES*/
+#categories{
+    display: none;
+    font-family: 'Sigmar One', cursive;
+    
+}
+
+#history, #geography, #sports, #artAndCulture {
     margin: 20px auto;
-    background: #fff;
+    border: 4px solid white;
+    width: 250px;
+    height: 250px;
+}
+
+/*IMAGENES PREGUNTAS*/
+#img0, #img1,#img2,#img3,#img4{
+    margin: 15px 15px;
+    height: 150px;
+    width: 250px;
+}
+#QUESTION0,#QUESTION1,#QUESTION2,#QUESTION3,#QUESTION4{
+    margin: 5px;
+}
+.activo {
+    background-color: #405766;
+}
+
+#questions{
+    margin-bottom: 20px;
+}
+
+
+/*DIV MOVIMIENTO*/
+.wizard {
+    width: 100%;
+    margin: 20px auto;
+    background: #bac8d6;
+    opacity: 0.9;
 }
 
     .wizard .nav-tabs {
@@ -137,4 +224,14 @@ span.round-tab:hover {
         position: absolute;
         left: 35%;
     }
+}
+
+/*RESULTS*/
+/*.col-xs-6{
+    width: 40%;
+    padding: 40px;
+}*/
+.rowAnswers{
+    margin-right: auto;
+    margin-left: 5px;
 }
