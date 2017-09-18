@@ -15,7 +15,7 @@ $(document).ready(function () {
     $("#geography").click(function(){
         document.location.href = "level2.html";
     });
-        $("#ArtCulture").click(function(){
+    $("#artAndCulture").click(function(){
         document.location.href = "level3.html";
     });
     $("#sports").click(function(){
