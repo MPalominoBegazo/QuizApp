@@ -15,12 +15,13 @@ $(document).ready(function () {
     $("#geography").click(function(){
         document.location.href = "level2.html";
     });
-    $("#sports").click(function(){
+        $("#ArtCulture").click(function(){
         document.location.href = "level3.html";
     });
-    $("#ArtCulture").click(function(){
+    $("#sports").click(function(){
         document.location.href = "level4.html";
     });
+
     $("#play").click(function () {
         document.location.href = "Level1.html";
     });

@@ -110,7 +110,7 @@ let appQuiz = {
                 document.location.href = "index.html";
             });
             $("#next").click(function () {
-                document.location.href = "level2.html";
+                document.location.href = "level4.html";
             });
 
         }

@@ -12,11 +12,11 @@ let appQuiz = {
     },
     init: function () {
         appQuiz.items.quesGeography = [
-            new appQuiz.Questions("¿En que departamento se encuentra el volvan Chachani?", ["Tacna", "Moquegua", "Arequipa"], "Arequipa"),
-            new appQuiz.Questions("¿Cuál es el unico departamento del Perú cuyo territorio comprende las regiones naturales de costa, sierra y selva?", ["Piura", "La Libertad", "Ancash"], "La Libertad"),
-            new appQuiz.Questions("¿Cuál de estos volcanes esta ubicado en Moquegua?", ["Ampato", "Huaynaputina", "Sabancaya"], "Huaynaputina"),
-            new appQuiz.Questions("¿Cuál es el factor que favorece la gran variedad ictiológica del mar Peruano?", ["Frialdad de Aguas", "Poca salinidad del mar", "Intensidad de las lluvias"], "Frialdad de Agua"),
-            new appQuiz.Questions("¿Cuál es el desierto mas extenso del Perú?", ["Sechura", "Nazca", "Atacama(Frontera con Chile)"], "Sechura")
+            new appQuiz.Questions("¿Hace cuántos años Perú no va a un mundial de Fútbol?", ["32", "36", "35"], "36"),
+            new appQuiz.Questions("¿Cuál es el nombre de la Voleybolista Leyva?", ["MayiLaura", "Mirtha", "Angela"], "Angela"),
+            new appQuiz.Questions("¿Cuántas medallas olimpicas tiene el Perú?", ["4", "10", "6"], "4"),
+            new appQuiz.Questions("¿Donde y Cuándo serán los próximos juegos Panamericanos?", ["Lima-2018", "Lima-2019", "Chile-2019"], "Lima-2019"),
+            new appQuiz.Questions("¿Quienes son los protagonistas del llamado Clásico del Pacífico?", ["Colombia-Chile", "Brasil-Argentina", "Perú-Chile"], "Perú-Chile")
         ];
         //Initialize tooltips
         $('.nav-tabs > li a[title]').tooltip();
@@ -108,9 +108,6 @@ let appQuiz = {
             $("#btnHome").show();
             $("#homebtn").click(function () {
                 document.location.href = "index.html";
-            });
-            $("#next").click(function () {
-                document.location.href = "level3.html";
             });
 
         }
