@@ -1,3 +1,4 @@
+"use strict";
 let appQuiz = {
     items: {
         quesGeography: undefined,

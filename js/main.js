@@ -1,3 +1,4 @@
+"use strict";
 /*Menu BUTTONS */
 $(document).ready(function () {
     $("#categoriesDiv").click(function () {
