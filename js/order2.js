@@ -12,8 +12,8 @@ let appQuiz = {
     },
     init: function () {
         appQuiz.items.quesGeography = [
-            new appQuiz.Questions("¿En que departamento se encuentra el volvan Chachani?", ["Tacna", "Moquegua", "Arequipa"], "Arequipa"),
-            new appQuiz.Questions("¿Cuál es el unico departamento del Perú cuyo territorio comprende las regiones naturales de costa, sierra y selva?", ["Piura", "La Libertad", "Ancash"], "La Libertad"),
+            new appQuiz.Questions("¿En que departamento se encuentra el volcán Chachani?", ["Tacna", "Moquegua", "Arequipa"], "Arequipa"),
+            new appQuiz.Questions("¿Cuál es el único departamento del Perú cuyo territorio comprende las regiones naturales de costa, sierra y selva?", ["Piura", "La Libertad", "Ancash"], "La Libertad"),
             new appQuiz.Questions("¿Cuál de estos volcanes esta ubicado en Moquegua?", ["Ampato", "Huaynaputina", "Sabancaya"], "Huaynaputina"),
             new appQuiz.Questions("¿Cuál es el factor que favorece la gran variedad ictiológica del mar Peruano?", ["Frialdad de Aguas", "Poca salinidad del mar", "Intensidad de las lluvias"], "Frialdad de Agua"),
             new appQuiz.Questions("¿Cuál es el desierto mas extenso del Perú?", ["Sechura", "Nazca", "Atacama(Frontera con Chile)"], "Sechura")
