@@ -63,6 +63,37 @@ body{
     width: 250px;
     height: 250px;
 }
+#btnHome{
+    display: none;
+}
+#home{
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    z-index: 5;
+    height: 100px;
+    width: 100px;
+}
+
+#homebtn{
+    position: absolute;
+    bottom: 2.5px;
+    left: 25px;
+    z-index: 5;
+    height: 80px;
+    width: 80px;
+}
+
+#next{
+    position: absolute;
+    bottom: 2.5px;
+    right: 25px;
+    z-index: 5;
+    height: 80px;
+    width: 80px;
+}
+
+
 
 /*IMAGENES PREGUNTAS*/
 #img0, #img1,#img2,#img3,#img4{
@@ -80,8 +111,6 @@ body{
 #questions{
     margin-bottom: 20px;
 }
-
-
 /*DIV MOVIMIENTO*/
 .wizard {
     width: 100%;
@@ -227,10 +256,6 @@ span.round-tab:hover {
 }
 
 /*RESULTS*/
-/*.col-xs-6{
-    width: 40%;
-    padding: 40px;
-}*/
 .rowAnswers{
     margin-right: auto;
     margin-left: 5px;

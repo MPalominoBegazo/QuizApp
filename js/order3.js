@@ -1,6 +1,6 @@
 let appQuiz = {
     items: {
-        quesHistory: undefined,
+        quesGeography: undefined,
         userAnswers: [],
         score: 0,
         i: 0,
@@ -11,12 +11,12 @@ let appQuiz = {
         this.answer = answer;
     },
     init: function () {
-        appQuiz.items.quesHistory = [
-            new appQuiz.Questions("¿De qué cultura son caracteriticas las trepanaciones craneanas?", ["Nazca", "Chimu", "Paracas"], "Paracas"),
-            new appQuiz.Questions("¿Cuál fue el último virrey del Perú?", ["Francisco de Borja y Aragon", "Jose de la Serna Hinojosa", "Blasco Nuñez Vela"], "Jose de la Serna Hinojosa"),
-            new appQuiz.Questions("¿Quien ayudo a los españoles en su camino de Cajamarca a Cusco en 1583?", ["Calcuchimac", "Manco Inca", "Huascar"], "Manco Inca"),
-            new appQuiz.Questions("¿Cuanto tiempo duró el gobierno del primer Presidente del Peru?", ["24 meses", "13 meses", "4 meses"], "4 meses"),
-            new appQuiz.Questions("¿Con cuál de estos paises el Perú tuvo más conflictos armados?", ["Chile", "Ecuador", "Bolivia"], "Ecuador")
+        appQuiz.items.quesGeography = [
+            new appQuiz.Questions("¿Quién escribió el caballero Carmelo?", ["Ricardo Palma", "Abraham Valdelomar", "César Vallejo "], "Abraham Valdelomar"),
+            new appQuiz.Questions("¿Cómo se llama este grupo?", ["Mar de Copas", "Amén", "Leusemia"], "Amén"),
+            new appQuiz.Questions("¿Quién escribio el siguiente fragmento literario?", ["Javier Heraud", "Mariano Melgar", "Martin Adán"], "Mariano Melgar"),
+            new appQuiz.Questions("¿Cómo se llama la protagonista de la película La teta asustada?", ["Perpetua", "Severina", "Fausta"], "Fausta"),
+            new appQuiz.Questions("¿De que departamento del Perú es esta expresión artistica?", ["Cajamarca", "Moquegua", "Ayacucho"], "Ayacucho")
         ];
         //Initialize tooltips
         $('.nav-tabs > li a[title]').tooltip();
@@ -40,19 +40,19 @@ let appQuiz = {
     },
 
     showQuestion: function () {
-        for (let i = 0; i < appQuiz.items.quesHistory.length; i++) {
+        for (let i = 0; i < appQuiz.items.quesGeography.length; i++) {
             let titleQuestion = "#QUESTION" + i;
             let divQuestion = "#Qstn" + i;
-            $(`${titleQuestion}`).append(`<h3 align="center">"${appQuiz.items.quesHistory[i].question}"</h3>`);
+            $(`${titleQuestion}`).append(`<h3 align="center">"${appQuiz.items.quesGeography[i].question}"</h3>`);
             $(`${divQuestion}`).append(`<div class="row text-center">\
                                     <div class="col-md-12">\
-                                         <a class="btn btn-block btn-success btnClic" id="a">${appQuiz.items.quesHistory[i].choices[0]}</a>\
+                                         <a class="btn btn-block btn-success btnClic" id="a">${appQuiz.items.quesGeography[i].choices[0]}</a>\
                                     </div>\
                                     <div class="col-md-12">\
-                                         <a class="btn btn-block btn-warning btnClic" id="b">${appQuiz.items.quesHistory[i].choices[1]}</a>\
+                                         <a class="btn btn-block btn-warning btnClic" id="b">${appQuiz.items.quesGeography[i].choices[1]}</a>\
                                     </div>\
                                     <div class="col-md-12">\
-                                         <a class="btn btn-block btn-danger btnClic" id="c">${appQuiz.items.quesHistory[i].choices[2]}</a>\
+                                         <a class="btn btn-block btn-danger btnClic" id="c">${appQuiz.items.quesGeography[i].choices[2]}</a>\
                                     </div>\
                                 </div>`);
         }
@@ -68,8 +68,8 @@ let appQuiz = {
     },
     results: function () {
         // console.log(appQuiz.items.userAnswers[appQuiz.items.i]);
-        //console.log(appQuiz.items.quesHistory[appQuiz.items.i].answer);
-        if (appQuiz.items.userAnswers[appQuiz.items.i] == appQuiz.items.quesHistory[appQuiz.items.i].answer) {
+        //console.log(appQuiz.items.quesGeography[appQuiz.items.i].answer);
+        if (appQuiz.items.userAnswers[appQuiz.items.i] == appQuiz.items.quesGeography[appQuiz.items.i].answer) {
             //console.log("Hola" + appQuiz.items.userAnswers[appQuiz.items.i]);
             appQuiz.items.score++;
             console.log(appQuiz.items.score);
@@ -78,7 +78,7 @@ let appQuiz = {
                                         <p class="colorRpta"><i class="fa fa-check-circle" aria-hidden="true"></i> ${appQuiz.items.userAnswers[appQuiz.items.i]}</p>\
                                     </div>\
                                     <div class="col-md-6 col-sm-6 col-xs-6">\
-                                       <p class="colorRpta"><i class="fa fa-check-circle" aria-hidden="true"></i> ${appQuiz.items.quesHistory[appQuiz.items.i].answer}</p>\
+                                       <p class="colorRpta"><i class="fa fa-check-circle" aria-hidden="true"></i> ${appQuiz.items.quesGeography[appQuiz.items.i].answer}</p>\
                                     </div>\
                                 </div>`);
 
@@ -90,7 +90,7 @@ let appQuiz = {
                                         <p class="wrongRpta"><i class="fa fa-times-circle" aria-hidden="true"></i> ${appQuiz.items.userAnswers[appQuiz.items.i]}</p>\
                                      </div>\
                                      <div class="col-md-6 col-sm-6 col-xs-6">\
-                                       <p class="colorRpta"><i class="fa fa-check-circle" aria-hidden="true"></i> ${appQuiz.items.quesHistory[appQuiz.items.i].answer}</p>\
+                                       <p class="colorRpta"><i class="fa fa-check-circle" aria-hidden="true"></i> ${appQuiz.items.quesGeography[appQuiz.items.i].answer}</p>\
                                     </div>\
                                  </div>`);
 

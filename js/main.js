@@ -1,13 +1,26 @@
 /*Menu BUTTONS */
 $(document).ready(function () {
-    /*Show categories*/
     $("#categoriesDiv").click(function () {
         $("#menu").hide();
         $("#categories").show();
     });
-    /*Regresar*/
-
-    /*PLay level1 */
+ 
+    $("#home").click(function(){
+        $("#menu").show();
+        $("#categories").hide();
+    });
+    $("#history").click(function(){
+        document.location.href = "Level1.html";
+    });
+    $("#geography").click(function(){
+        document.location.href = "level2.html";
+    });
+    $("#sports").click(function(){
+        document.location.href = "level3.html";
+    });
+    $("#ArtCulture").click(function(){
+        document.location.href = "level4.html";
+    });
     $("#play").click(function () {
         document.location.href = "Level1.html";
     });
