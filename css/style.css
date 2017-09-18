@@ -113,6 +113,12 @@ body{
 #questions{
     margin-bottom: 20px;
 }
+
+.col-center{
+    float: none;
+    margin: 0 auto;
+}
+
 /*DIV MOVIMIENTO*/
 .wizard {
     width: 100%;
